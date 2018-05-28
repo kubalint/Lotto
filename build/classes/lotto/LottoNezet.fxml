@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lotto.LottoNezetController">
+    <children>
+      <Pane id="basePane" fx:id="basePane" prefHeight="200.0" prefWidth="320.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button id="otosBtn" fx:id="otosBtn" onAction="#sorsoljOtosig" layoutX="189.0" layoutY="161.0" mnemonicParsing="false" text="Sorsolj 5-ösig" />
+              <Button fx:id="button" layoutX="60.0" layoutY="161.0" onAction="#handleButtonAction" text="Sorsolás" />
+            <HBox layoutX="32.0" layoutY="14.0" prefHeight="25.0" prefWidth="256.0" spacing="30.0">
+               <children>
+                  <TextField id="input1" fx:id="input1" layoutX="64.0" layoutY="25.0" prefHeight="25.0" prefWidth="27.0" />
+                  <TextField id="input2" fx:id="input2" layoutX="103.0" layoutY="25.0" prefHeight="25.0" prefWidth="27.0" />
+                  <TextField id="input5" fx:id="input5" layoutX="145.0" layoutY="25.0" prefHeight="25.0" prefWidth="27.0" />
+                  <TextField id="input4" fx:id="input4" layoutX="188.0" layoutY="25.0" prefHeight="25.0" prefWidth="27.0" />
+                  <TextField id="input3" fx:id="input3" layoutX="225.0" layoutY="25.0" prefHeight="25.0" prefWidth="27.0" />
+               </children>
+            </HBox>
+            <Label id="label1" fx:id="label1" layoutX="32.0" layoutY="129.0" prefHeight="25.0" prefWidth="27.0" textAlignment="CENTER" />
+            <Label id="label2" fx:id="label2" layoutX="90.0" layoutY="129.0" prefHeight="25.0" prefWidth="27.0" textAlignment="CENTER" />
+            <Label id="label4" fx:id="label4" layoutX="261.0" layoutY="129.0" prefHeight="25.0" prefWidth="27.0" textAlignment="CENTER" />
+            <Label id="label5" fx:id="label5" layoutX="206.0" layoutY="129.0" prefHeight="25.0" prefWidth="27.0" textAlignment="CENTER" />
+            <Label id="label3" fx:id="label3" layoutX="147.0" layoutY="129.0" prefHeight="25.0" prefWidth="27.0" textAlignment="CENTER" />
+            <Label id="resulttext" fx:id="resulttextID" alignment="CENTER" contentDisplay="CENTER" layoutX="32.0" layoutY="74.0" prefHeight="17.0" prefWidth="256.0" text="" textAlignment="CENTER" />
+         </children>
+      </Pane>
+      <Pane id="alertpane" fx:id="alertpane" layoutX="62.0" layoutY="47.0" prefHeight="109.0" prefWidth="196.0" visible="false" AnchorPane.bottomAnchor="44.0" AnchorPane.leftAnchor="62.0" AnchorPane.rightAnchor="62.0" AnchorPane.topAnchor="47.0">
+         <children>
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#9acbe3" height="109.0" smooth="false" stroke="BLACK" strokeType="INSIDE" width="196.0" />
+            <Label id="alertText" fx:id="alerttext" layoutX="22.0" layoutY="23.0" text="" textAlignment="CENTER" />
+            <Button id="alertBtn" fx:id="alertBtn" layoutX="82.0" layoutY="70.0" mnemonicParsing="false" onAction="#handleAlertButton" text="Ok" />
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>
